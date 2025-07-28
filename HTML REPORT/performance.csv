@@ -1,0 +1,343 @@
+timeStamp,elapsed,label,responseCode,responseMessage,threadName,dataType,success,failureMessage,bytes,sentBytes,grpThreads,allThreads,URL,Latency,IdleTime,Connect
+1698954742902,2500,https://portaltest.mtn.ci/auth/authenticate/basic,200,OK,Thread Group 1-1,text,true,,3830,4388,6,6,https://portaltest.mtn.ci/auth/authenticate/basic,2500,0,515
+1698954743071,2631,https://portaltest.mtn.ci/auth/authenticate/basic,200,OK,Thread Group 1-2,text,true,,3830,4388,6,6,https://portaltest.mtn.ci/auth/authenticate/basic,2631,0,497
+1698954745402,1219,https://portaltest.mtn.ci/assets/toast/success.svg,200,OK,Thread Group 1-1,text,true,,1604,434,6,6,https://portaltest.mtn.ci/assets/toast/success.svg,1219,0,0
+1698954745702,920,https://portaltest.mtn.ci/assets/toast/success.svg,200,OK,Thread Group 1-2,text,true,,1604,434,6,6,https://portaltest.mtn.ci/assets/toast/success.svg,920,0,0
+1698954746623,246,https://portaltest.mtn.ci/assets/icons/fold.svg,200,OK,Thread Group 1-1,text,true,,417,431,6,6,https://portaltest.mtn.ci/assets/icons/fold.svg,246,0,0
+1698954746623,246,https://portaltest.mtn.ci/assets/icons/fold.svg,200,OK,Thread Group 1-2,text,true,,417,431,6,6,https://portaltest.mtn.ci/assets/icons/fold.svg,246,0,0
+1698954743238,4102,https://portaltest.mtn.ci/auth/authenticate/basic,200,OK,Thread Group 1-3,text,true,,3830,4388,6,6,https://portaltest.mtn.ci/auth/authenticate/basic,4102,0,2166
+1698954746869,1157,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,200,OK,Thread Group 1-1,text,true,,8831,436,6,6,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,1157,0,0
+1698954743405,4622,https://portaltest.mtn.ci/auth/authenticate/basic,200,OK,Thread Group 1-4,text,true,,3830,4388,6,6,https://portaltest.mtn.ci/auth/authenticate/basic,4622,0,2300
+1698954746870,1156,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,200,OK,Thread Group 1-2,text,true,,8831,436,6,6,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,1156,0,0
+1698954747339,754,https://portaltest.mtn.ci/assets/toast/success.svg,200,OK,Thread Group 1-3,text,true,,1604,434,6,6,https://portaltest.mtn.ci/assets/toast/success.svg,754,0,0
+1698954743736,5529,https://portaltest.mtn.ci/auth/authenticate/basic,200,OK,Thread Group 1-6,text,true,,3830,4388,6,6,https://portaltest.mtn.ci/auth/authenticate/basic,5529,0,3094
+1698954743569,5696,https://portaltest.mtn.ci/auth/authenticate/basic,200,OK,Thread Group 1-5,text,true,,3830,4388,6,6,https://portaltest.mtn.ci/auth/authenticate/basic,5696,0,3261
+1698954748027,1508,https://portaltest.mtn.ci/assets/icons/clog.svg,200,OK,Thread Group 1-1,text,true,,3420,431,6,6,https://portaltest.mtn.ci/assets/icons/clog.svg,1508,0,0
+1698954748027,1508,https://portaltest.mtn.ci/assets/toast/success.svg,200,OK,Thread Group 1-4,text,true,,1604,434,6,6,https://portaltest.mtn.ci/assets/toast/success.svg,1508,0,0
+1698954748027,1615,https://portaltest.mtn.ci/assets/icons/clog.svg,200,OK,Thread Group 1-2,text,true,,3420,431,6,6,https://portaltest.mtn.ci/assets/icons/clog.svg,1615,0,0
+1698954748093,1549,https://portaltest.mtn.ci/assets/icons/fold.svg,200,OK,Thread Group 1-3,text,true,,417,431,6,6,https://portaltest.mtn.ci/assets/icons/fold.svg,1549,0,0
+1698954749266,494,https://portaltest.mtn.ci/assets/toast/success.svg,200,OK,Thread Group 1-6,text,true,,1604,434,6,6,https://portaltest.mtn.ci/assets/toast/success.svg,494,0,0
+1698954749266,552,https://portaltest.mtn.ci/assets/toast/success.svg,200,OK,Thread Group 1-5,text,true,,1604,434,6,6,https://portaltest.mtn.ci/assets/toast/success.svg,552,0,0
+1698954749535,781,https://portaltest.mtn.ci/assets/icons/fold.svg,200,OK,Thread Group 1-4,text,true,,417,431,6,6,https://portaltest.mtn.ci/assets/icons/fold.svg,781,0,0
+1698954749535,781,https://portaltest.mtn.ci/assets/icons/sort-down.svg,200,OK,Thread Group 1-1,text,true,,868,436,6,6,https://portaltest.mtn.ci/assets/icons/sort-down.svg,781,0,0
+1698954749642,1034,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,200,OK,Thread Group 1-3,text,true,,8831,436,6,6,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,1034,0,0
+1698954749760,916,https://portaltest.mtn.ci/assets/icons/fold.svg,200,OK,Thread Group 1-6,text,true,,417,431,6,6,https://portaltest.mtn.ci/assets/icons/fold.svg,916,0,0
+1698954749642,1034,https://portaltest.mtn.ci/assets/icons/sort-down.svg,200,OK,Thread Group 1-2,text,true,,868,436,6,6,https://portaltest.mtn.ci/assets/icons/sort-down.svg,1034,0,0
+1698954750317,367,https://portaltest.mtn.ci/assets/tabs/home.svg,200,OK,Thread Group 1-1,text,true,,1036,430,6,6,https://portaltest.mtn.ci/assets/tabs/home.svg,367,0,0
+1698954749818,867,https://portaltest.mtn.ci/assets/icons/fold.svg,200,OK,Thread Group 1-5,text,true,,417,431,6,6,https://portaltest.mtn.ci/assets/icons/fold.svg,867,0,0
+1698954750317,1080,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,200,OK,Thread Group 1-4,text,true,,8831,436,6,6,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,1080,0,0
+1698954750677,823,https://portaltest.mtn.ci/assets/icons/clog.svg,200,OK,Thread Group 1-3,text,true,,3420,431,6,6,https://portaltest.mtn.ci/assets/icons/clog.svg,823,0,0
+1698954750677,1854,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,200,OK,Thread Group 1-6,text,true,,8831,436,6,6,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,1854,0,0
+1698954750685,1846,https://portaltest.mtn.ci/assets/tabs/person.svg,200,OK,Thread Group 1-1,text,true,,793,432,6,6,https://portaltest.mtn.ci/assets/tabs/person.svg,1846,0,0
+1698954750677,1854,https://portaltest.mtn.ci/assets/tabs/home.svg,200,OK,Thread Group 1-2,text,true,,1036,430,6,6,https://portaltest.mtn.ci/assets/tabs/home.svg,1854,0,0
+1698954750685,1846,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,200,OK,Thread Group 1-5,text,true,,8831,436,6,6,https://portaltest.mtn.ci/assets/icons/logo-gray.svg,1846,0,0
+1698954751398,1134,https://portaltest.mtn.ci/assets/icons/clog.svg,200,OK,Thread Group 1-4,text,true,,3420,431,6,6,https://portaltest.mtn.ci/assets/icons/clog.svg,1134,0,0
+1698954751500,1032,https://portaltest.mtn.ci/assets/icons/sort-down.svg,200,OK,Thread Group 1-3,text,true,,868,436,6,6,https://portaltest.mtn.ci/assets/icons/sort-down.svg,1032,0,0
+1698954752532,676,https://portaltest.mtn.ci/assets/tabs/person.svg,200,OK,Thread Group 1-2,text,true,,793,432,6,6,https://portaltest.mtn.ci/assets/tabs/person.svg,676,0,0
+1698954752532,676,https://portaltest.mtn.ci/assets/tabs/eye.svg,200,OK,Thread Group 1-1,text,true,,812,429,6,6,https://portaltest.mtn.ci/assets/tabs/eye.svg,676,0,0
+1698954752532,676,https://portaltest.mtn.ci/assets/icons/clog.svg,200,OK,Thread Group 1-6,text,true,,3420,431,6,6,https://portaltest.mtn.ci/assets/icons/clog.svg,676,0,0
+1698954752532,676,https://portaltest.mtn.ci/assets/icons/clog.svg,200,OK,Thread Group 1-5,text,true,,3420,431,6,6,https://portaltest.mtn.ci/assets/icons/clog.svg,676,0,0
+1698954752533,675,https://portaltest.mtn.ci/assets/tabs/home.svg,200,OK,Thread Group 1-3,text,true,,1036,430,6,6,https://portaltest.mtn.ci/assets/tabs/home.svg,675,0,0
+1698954752533,675,https://portaltest.mtn.ci/assets/icons/sort-down.svg,200,OK,Thread Group 1-4,text,true,,868,436,6,6,https://portaltest.mtn.ci/assets/icons/sort-down.svg,675,0,0
+1698954753209,273,https://portaltest.mtn.ci/svg/caret-down.svg,200,OK,Thread Group 1-1,text,true,,465,428,6,6,https://portaltest.mtn.ci/svg/caret-down.svg,273,0,0
+1698954753209,273,https://portaltest.mtn.ci/assets/tabs/person.svg,200,OK,Thread Group 1-3,text,true,,793,432,6,6,https://portaltest.mtn.ci/assets/tabs/person.svg,273,0,0
+1698954753209,276,https://portaltest.mtn.ci/assets/icons/sort-down.svg,200,OK,Thread Group 1-6,text,true,,868,436,6,6,https://portaltest.mtn.ci/assets/icons/sort-down.svg,276,0,0
+1698954753209,295,https://portaltest.mtn.ci/assets/tabs/eye.svg,200,OK,Thread Group 1-2,text,true,,812,429,6,6,https://portaltest.mtn.ci/assets/tabs/eye.svg,295,0,0
+1698954753209,311,https://portaltest.mtn.ci/assets/tabs/home.svg,200,OK,Thread Group 1-4,text,true,,1036,430,6,6,https://portaltest.mtn.ci/assets/tabs/home.svg,311,0,0
+1698954753209,340,https://portaltest.mtn.ci/assets/icons/sort-down.svg,200,OK,Thread Group 1-5,text,true,,868,436,6,6,https://portaltest.mtn.ci/assets/icons/sort-down.svg,340,0,0
+1698954753483,307,https://portaltest.mtn.ci/assets/tabs/capture.svg,200,OK,Thread Group 1-1,text,true,,1106,433,6,6,https://portaltest.mtn.ci/assets/tabs/capture.svg,307,0,0
+1698954753483,307,https://portaltest.mtn.ci/assets/tabs/eye.svg,200,OK,Thread Group 1-3,text,true,,812,429,6,6,https://portaltest.mtn.ci/assets/tabs/eye.svg,307,0,0
+1698954753504,286,https://portaltest.mtn.ci/svg/caret-down.svg,200,OK,Thread Group 1-2,text,true,,465,428,6,6,https://portaltest.mtn.ci/svg/caret-down.svg,286,0,0
+1698954753486,304,https://portaltest.mtn.ci/assets/tabs/home.svg,200,OK,Thread Group 1-6,text,true,,1036,430,6,6,https://portaltest.mtn.ci/assets/tabs/home.svg,304,0,0
+1698954753520,270,https://portaltest.mtn.ci/assets/tabs/person.svg,200,OK,Thread Group 1-4,text,true,,793,432,6,6,https://portaltest.mtn.ci/assets/tabs/person.svg,270,0,0
+1698954753550,240,https://portaltest.mtn.ci/assets/tabs/home.svg,200,OK,Thread Group 1-5,text,true,,1036,430,6,6,https://portaltest.mtn.ci/assets/tabs/home.svg,240,0,0
+1698954753792,353,https://portaltest.mtn.ci/svg/caret-down.svg,200,OK,Thread Group 1-3,text,true,,465,428,6,6,https://portaltest.mtn.ci/svg/caret-down.svg,353,0,0
+1698954753791,354,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,200,OK,Thread Group 1-1,text,true,,1548,438,6,6,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,354,0,0
+1698954753792,353,https://portaltest.mtn.ci/assets/tabs/eye.svg,200,OK,Thread Group 1-4,text,true,,812,429,6,6,https://portaltest.mtn.ci/assets/tabs/eye.svg,353,0,0
+1698954753792,371,https://portaltest.mtn.ci/assets/tabs/capture.svg,200,OK,Thread Group 1-2,text,true,,1106,433,6,6,https://portaltest.mtn.ci/assets/tabs/capture.svg,371,0,0
+1698954753792,371,https://portaltest.mtn.ci/assets/tabs/person.svg,200,OK,Thread Group 1-5,text,true,,793,432,6,6,https://portaltest.mtn.ci/assets/tabs/person.svg,371,0,0
+1698954753792,398,https://portaltest.mtn.ci/assets/tabs/person.svg,200,OK,Thread Group 1-6,text,true,,793,432,6,6,https://portaltest.mtn.ci/assets/tabs/person.svg,398,0,0
+1698954754146,257,https://portaltest.mtn.ci/assets/tabs/device.svg,200,OK,Thread Group 1-1,text,true,,727,432,6,6,https://portaltest.mtn.ci/assets/tabs/device.svg,257,0,0
+1698954754146,257,https://portaltest.mtn.ci/assets/tabs/capture.svg,200,OK,Thread Group 1-3,text,true,,1106,433,6,6,https://portaltest.mtn.ci/assets/tabs/capture.svg,257,0,0
+1698954754146,262,https://portaltest.mtn.ci/svg/caret-down.svg,200,OK,Thread Group 1-4,text,true,,465,428,6,6,https://portaltest.mtn.ci/svg/caret-down.svg,262,0,0
+1698954754163,257,https://portaltest.mtn.ci/assets/tabs/eye.svg,200,OK,Thread Group 1-5,text,true,,812,429,6,6,https://portaltest.mtn.ci/assets/tabs/eye.svg,257,0,0
+1698954754163,300,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,200,OK,Thread Group 1-2,text,true,,1548,438,6,6,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,300,0,0
+1698954754190,273,https://portaltest.mtn.ci/assets/tabs/eye.svg,200,OK,Thread Group 1-6,text,true,,812,429,6,6,https://portaltest.mtn.ci/assets/tabs/eye.svg,273,0,0
+1698954754403,1232,https://portaltest.mtn.ci/assets/tabs/officeb.svg,200,OK,Thread Group 1-1,text,true,,1392,433,6,6,https://portaltest.mtn.ci/assets/tabs/officeb.svg,1232,0,0
+1698954754408,1227,https://portaltest.mtn.ci/assets/tabs/capture.svg,200,OK,Thread Group 1-4,text,true,,1106,433,6,6,https://portaltest.mtn.ci/assets/tabs/capture.svg,1227,0,0
+1698954754420,1215,https://portaltest.mtn.ci/svg/caret-down.svg,200,OK,Thread Group 1-5,text,true,,465,428,6,6,https://portaltest.mtn.ci/svg/caret-down.svg,1215,0,0
+1698954754464,1171,https://portaltest.mtn.ci/assets/tabs/device.svg,200,OK,Thread Group 1-2,text,true,,727,432,6,6,https://portaltest.mtn.ci/assets/tabs/device.svg,1171,0,0
+1698954754404,1231,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,200,OK,Thread Group 1-3,text,true,,1548,438,6,6,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,1231,0,0
+1698954754464,1171,https://portaltest.mtn.ci/svg/caret-down.svg,200,OK,Thread Group 1-6,text,true,,465,428,6,6,https://portaltest.mtn.ci/svg/caret-down.svg,1171,0,0
+1698954755636,366,https://portaltest.mtn.ci/assets/tabs/capture.svg,200,OK,Thread Group 1-5,text,true,,1106,433,6,6,https://portaltest.mtn.ci/assets/tabs/capture.svg,366,0,0
+1698954755636,367,https://portaltest.mtn.ci/assets/tabs/capture.svg,200,OK,Thread Group 1-6,text,true,,1106,433,6,6,https://portaltest.mtn.ci/assets/tabs/capture.svg,367,0,0
+1698954755636,366,https://portaltest.mtn.ci/assets/tabs/device.svg,200,OK,Thread Group 1-3,text,true,,727,432,6,6,https://portaltest.mtn.ci/assets/tabs/device.svg,366,0,0
+1698954755636,366,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,200,OK,Thread Group 1-4,text,true,,1548,438,6,6,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,366,0,0
+1698954755636,972,https://portaltest.mtn.ci/assets/tabs/role.svg,200,OK,Thread Group 1-1,text,true,,9187,430,6,6,https://portaltest.mtn.ci/assets/tabs/role.svg,972,0,0
+1698954755636,972,https://portaltest.mtn.ci/assets/tabs/officeb.svg,200,OK,Thread Group 1-2,text,true,,1392,433,6,6,https://portaltest.mtn.ci/assets/tabs/officeb.svg,972,0,0
+1698954756003,822,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,200,OK,Thread Group 1-5,text,true,,1548,438,6,6,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,822,0,0
+1698954756003,848,https://portaltest.mtn.ci/assets/tabs/officeb.svg,200,OK,Thread Group 1-3,text,true,,1392,433,6,6,https://portaltest.mtn.ci/assets/tabs/officeb.svg,848,0,0
+1698954756003,848,https://portaltest.mtn.ci/assets/tabs/device.svg,200,OK,Thread Group 1-4,text,true,,727,432,6,6,https://portaltest.mtn.ci/assets/tabs/device.svg,848,0,0
+1698954756003,848,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,200,OK,Thread Group 1-6,text,true,,1548,438,6,6,https://portaltest.mtn.ci/assets/tabs/form-builder.svg,848,0,0
+1698954756608,280,https://portaltest.mtn.ci/assets/tabs/office.svg,200,OK,Thread Group 1-1,text,true,,1404,432,6,6,https://portaltest.mtn.ci/assets/tabs/office.svg,280,0,0
+1698954756608,1270,https://portaltest.mtn.ci/assets/tabs/role.svg,200,OK,Thread Group 1-2,text,true,,9187,430,6,6,https://portaltest.mtn.ci/assets/tabs/role.svg,1270,0,0
+1698954756826,1052,https://portaltest.mtn.ci/assets/tabs/device.svg,200,OK,Thread Group 1-5,text,true,,727,432,6,6,https://portaltest.mtn.ci/assets/tabs/device.svg,1052,0,0
+1698954756852,1026,https://portaltest.mtn.ci/assets/tabs/device.svg,200,OK,Thread Group 1-6,text,true,,727,432,6,6,https://portaltest.mtn.ci/assets/tabs/device.svg,1026,0,0
+1698954756889,1392,https://portaltest.mtn.ci/assets/tabs/settings.svg,200,OK,Thread Group 1-1,text,true,,1575,434,6,6,https://portaltest.mtn.ci/assets/tabs/settings.svg,1392,0,0
+1698954757879,402,https://portaltest.mtn.ci/assets/tabs/office.svg,200,OK,Thread Group 1-2,text,true,,1404,432,6,6,https://portaltest.mtn.ci/assets/tabs/office.svg,402,0,0
+1698954757879,402,https://portaltest.mtn.ci/assets/tabs/officeb.svg,200,OK,Thread Group 1-5,text,true,,1392,433,6,6,https://portaltest.mtn.ci/assets/tabs/officeb.svg,402,0,0
+1698954756852,1429,https://portaltest.mtn.ci/assets/tabs/role.svg,200,OK,Thread Group 1-3,text,true,,9187,430,6,6,https://portaltest.mtn.ci/assets/tabs/role.svg,1429,0,0
+1698954756852,1429,https://portaltest.mtn.ci/assets/tabs/officeb.svg,200,OK,Thread Group 1-4,text,true,,1392,433,6,6,https://portaltest.mtn.ci/assets/tabs/officeb.svg,1429,0,0
+1698954757879,402,https://portaltest.mtn.ci/assets/tabs/officeb.svg,200,OK,Thread Group 1-6,text,true,,1392,433,6,6,https://portaltest.mtn.ci/assets/tabs/officeb.svg,402,0,0
+1698954758282,318,https://portaltest.mtn.ci/assets/tabs/office.svg,200,OK,Thread Group 1-3,text,true,,1404,432,6,6,https://portaltest.mtn.ci/assets/tabs/office.svg,318,0,0
+1698954758282,318,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,200,OK,Thread Group 1-1,text,true,,851,440,6,6,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,318,0,0
+1698954758282,958,https://portaltest.mtn.ci/assets/tabs/settings.svg,200,OK,Thread Group 1-2,text,true,,1575,434,6,6,https://portaltest.mtn.ci/assets/tabs/settings.svg,958,0,0
+1698954758282,958,https://portaltest.mtn.ci/assets/tabs/role.svg,200,OK,Thread Group 1-4,text,true,,9187,430,6,6,https://portaltest.mtn.ci/assets/tabs/role.svg,958,0,0
+1698954758282,958,https://portaltest.mtn.ci/assets/tabs/role.svg,200,OK,Thread Group 1-5,text,true,,9187,430,6,6,https://portaltest.mtn.ci/assets/tabs/role.svg,958,0,0
+1698954758282,1095,https://portaltest.mtn.ci/assets/tabs/role.svg,200,OK,Thread Group 1-6,text,true,,9187,430,6,6,https://portaltest.mtn.ci/assets/tabs/role.svg,1095,0,0
+1698954758602,808,https://portaltest.mtn.ci/assets/tabs/settings.svg,200,OK,Thread Group 1-3,text,true,,1575,434,6,6,https://portaltest.mtn.ci/assets/tabs/settings.svg,808,0,0
+1698954759241,721,https://portaltest.mtn.ci/assets/tabs/office.svg,200,OK,Thread Group 1-4,text,true,,1404,432,6,6,https://portaltest.mtn.ci/assets/tabs/office.svg,721,0,0
+1698954759379,583,https://portaltest.mtn.ci/assets/tabs/office.svg,200,OK,Thread Group 1-6,text,true,,1404,432,6,6,https://portaltest.mtn.ci/assets/tabs/office.svg,583,0,0
+1698954759241,721,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,200,OK,Thread Group 1-2,text,true,,851,440,6,6,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,721,0,0
+1698954759411,551,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,200,OK,Thread Group 1-3,text,true,,851,440,6,6,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,551,0,0
+1698954759242,720,https://portaltest.mtn.ci/assets/tabs/office.svg,200,OK,Thread Group 1-5,text,true,,1404,432,6,6,https://portaltest.mtn.ci/assets/tabs/office.svg,720,0,0
+1698954759962,840,https://portaltest.mtn.ci/assets/tabs/settings.svg,200,OK,Thread Group 1-6,text,true,,1575,434,6,6,https://portaltest.mtn.ci/assets/tabs/settings.svg,840,0,0
+1698954759962,840,https://portaltest.mtn.ci/assets/tabs/settings.svg,200,OK,Thread Group 1-4,text,true,,1575,434,6,6,https://portaltest.mtn.ci/assets/tabs/settings.svg,840,0,0
+1698954759963,1507,https://portaltest.mtn.ci/api/internationalization/set-user-lang,401,Unauthorized,Thread Group 1-2,text,false,,336,4248,6,6,https://portaltest.mtn.ci/api/internationalization/set-user-lang,1507,0,0
+1698954758602,2868,https://portaltest.mtn.ci/api/internationalization/set-user-lang,401,Unauthorized,Thread Group 1-1,text,false,,336,4248,6,6,https://portaltest.mtn.ci/api/internationalization/set-user-lang,2868,0,0
+1698954759963,1507,https://portaltest.mtn.ci/assets/tabs/settings.svg,200,OK,Thread Group 1-5,text,true,,1575,434,6,6,https://portaltest.mtn.ci/assets/tabs/settings.svg,1507,0,0
+1698954760803,667,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,200,OK,Thread Group 1-6,text,true,,851,440,6,6,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,667,0,0
+1698954760803,667,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,200,OK,Thread Group 1-4,text,true,,851,440,6,6,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,667,0,0
+1698954759963,1507,https://portaltest.mtn.ci/api/internationalization/set-user-lang,401,Unauthorized,Thread Group 1-3,text,false,,336,4248,6,6,https://portaltest.mtn.ci/api/internationalization/set-user-lang,1507,0,0
+1698954761471,1271,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,200,OK,Thread Group 1-5,text,true,,851,440,6,6,https://portaltest.mtn.ci/assets/tabs/server-outline.svg,1271,0,0
+1698954761471,1737,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,401,Unauthorized,Thread Group 1-2,text,false,,336,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,1737,0,0
+1698954761472,1736,https://portaltest.mtn.ci/api/internationalization/set-user-lang,401,Unauthorized,Thread Group 1-6,text,false,,336,4248,6,6,https://portaltest.mtn.ci/api/internationalization/set-user-lang,1736,0,0
+1698954761472,1736,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,401,Unauthorized,Thread Group 1-3,text,false,,336,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,1736,0,0
+1698954761472,1737,https://portaltest.mtn.ci/api/internationalization/set-user-lang,401,Unauthorized,Thread Group 1-4,text,false,,336,4248,6,6,https://portaltest.mtn.ci/api/internationalization/set-user-lang,1737,0,0
+1698954761472,1737,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,401,Unauthorized,Thread Group 1-1,text,false,,336,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,1737,0,0
+1698954762743,1677,https://portaltest.mtn.ci/api/internationalization/set-user-lang,401,Unauthorized,Thread Group 1-5,text,false,,336,4248,6,6,https://portaltest.mtn.ci/api/internationalization/set-user-lang,1677,0,0
+1698954763209,1211,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,401,Unauthorized,Thread Group 1-4,text,false,,336,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,1211,0,0
+1698954763209,1211,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,401,Unauthorized,Thread Group 1-3,text,false,,336,4258,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,1211,0,0
+1698954763209,1211,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,401,Unauthorized,Thread Group 1-2,text,false,,336,4258,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,1211,0,0
+1698954763209,1211,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,401,Unauthorized,Thread Group 1-6,text,false,,336,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,1211,0,0
+1698954763209,1539,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,401,Unauthorized,Thread Group 1-1,text,false,,336,4258,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,1539,0,0
+1698954764419,328,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,401,Unauthorized,Thread Group 1-5,text,false,,336,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_SUMMARY,328,0,0
+1698954764419,328,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,401,Unauthorized,Thread Group 1-3,text,false,,336,4264,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,328,0,0
+1698954764419,378,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,401,Unauthorized,Thread Group 1-6,text,false,,336,4258,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,378,0,0
+1698954764420,377,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,401,Unauthorized,Thread Group 1-2,text,false,,336,4264,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,377,0,0
+1698954764419,378,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,401,Unauthorized,Thread Group 1-4,text,false,,336,4258,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,378,0,0
+1698954764747,1061,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,200,OK,Thread Group 1-3,text,true,,3783,456,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,1061,0,0
+1698954764747,1061,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,401,Unauthorized,Thread Group 1-5,text,false,,336,4258,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=REGISTRATION_USE_CASES,1061,0,0
+1698954764797,3073,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,200,OK,Thread Group 1-2,text,true,,3783,456,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,3073,0,0
+1698954764797,3073,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,401,Unauthorized,Thread Group 1-6,text,false,,336,4264,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,3073,0,0
+1698954765808,2062,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,200,OK,Thread Group 1-3,text,true,,8039,458,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,2062,0,0
+1698954764747,3123,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,401,Unauthorized,Thread Group 1-1,text,false,,336,4264,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,3123,0,0
+1698954765808,2063,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,401,Unauthorized,Thread Group 1-5,text,false,,336,4264,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,2063,0,0
+1698954764797,3073,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,401,Unauthorized,Thread Group 1-4,text,false,,336,4264,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATORS_AND_DEVICE_SUMMARY,3073,0,0
+1698954767871,1251,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,200,OK,Thread Group 1-2,text,true,,8039,458,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,1251,0,0
+1698954767871,1251,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,200,OK,Thread Group 1-3,text,true,,1323,450,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,1251,0,0
+1698954767871,1251,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,200,OK,Thread Group 1-6,text,true,,3783,456,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,1251,0,0
+1698954767871,1257,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,200,OK,Thread Group 1-5,text,true,,3783,456,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,1257,0,0
+1698954767871,1257,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,200,OK,Thread Group 1-1,text,true,,3783,456,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,1257,0,0
+1698954767871,1257,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,200,OK,Thread Group 1-4,text,true,,3783,456,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/todays-registration.svg,1257,0,0
+1698954769123,369,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,200,OK,Thread Group 1-3,text,true,,4865,462,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,369,0,0
+1698954769123,369,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,200,OK,Thread Group 1-2,text,true,,1323,450,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,369,0,0
+1698954769123,1135,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,200,OK,Thread Group 1-6,text,true,,8039,458,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,1135,0,0
+1698954769129,1129,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,200,OK,Thread Group 1-4,text,true,,8039,458,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,1129,0,0
+1698954769129,1129,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,200,OK,Thread Group 1-1,text,true,,8039,458,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,1129,0,0
+1698954769129,1208,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,200,OK,Thread Group 1-5,text,true,,8039,458,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/total-activated-today.svg,1208,0,0
+1698954769492,977,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,200,OK,Thread Group 1-2,text,true,,4865,462,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,977,0,0
+1698954770258,602,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,200,OK,Thread Group 1-6,text,true,,1323,450,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,602,0,0
+1698954770338,522,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,200,OK,Thread Group 1-5,text,true,,1323,450,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,522,0,0
+1698954770259,601,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,200,OK,Thread Group 1-4,text,true,,1323,450,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,601,0,0
+1698954770259,601,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,200,OK,Thread Group 1-1,text,true,,1323,450,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/current-month.svg,601,0,0
+1698954769493,1367,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,200,OK,Thread Group 1-3,text,true,,6056,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,1367,0,0
+1698954770860,352,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,200,OK,Thread Group 1-4,text,true,,4865,462,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,352,0,0
+1698954770860,910,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,200,OK,Thread Group 1-6,text,true,,4865,462,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,910,0,0
+1698954770861,1134,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,200,OK,Thread Group 1-1,text,true,,4865,462,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,1134,0,0
+1698954770860,1135,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,200,OK,Thread Group 1-5,text,true,,4865,462,6,6,https://portaltest.mtn.ci/assets/icons/dashboard/average-registration-time.svg,1135,0,0
+1698954770861,1293,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,200,OK,Thread Group 1-3,text,true,,4283,4248,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,1293,0,0
+1698954770470,1684,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,200,OK,Thread Group 1-2,text,true,,6056,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,1684,0,0
+1698954771213,942,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,200,OK,Thread Group 1-4,text,true,,6056,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,942,0,0
+1698954771771,1481,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,200,OK,Thread Group 1-6,text,true,,6056,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,1481,0,0
+1698954771996,1256,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,200,OK,Thread Group 1-1,text,true,,6056,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,1256,0,0
+1698954771996,1256,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,200,OK,Thread Group 1-5,text,true,,6056,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=ENROLMENT_TYPE_TREND,1256,0,0
+1698954772155,1707,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,200,OK,Thread Group 1-4,text,true,,4283,4248,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,1707,0,0
+1698954772155,1706,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,200,OK,Thread Group 1-2,text,true,,4283,4248,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,1706,0,0
+1698954772155,1706,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,200,OK,Thread Group 1-3,text,true,,4512,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,1706,0,0
+1698954773253,915,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,200,OK,Thread Group 1-1,text,true,,4283,4248,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,915,0,0
+1698954773253,978,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,200,OK,Thread Group 1-5,text,true,,4283,4248,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,978,0,0
+1698954773861,1229,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,200,OK,Thread Group 1-4,text,true,,4512,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,1229,0,0
+1698954773861,1229,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,200,OK,Thread Group 1-3,text,true,,4429,4255,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,1229,0,0
+1698954773861,1229,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,200,OK,Thread Group 1-2,text,true,,4512,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,1229,0,0
+1698954773254,1837,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,200,OK,Thread Group 1-6,text,true,,4283,4248,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=STATUS_TREND,1837,0,0
+1698954774168,922,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,200,OK,Thread Group 1-1,text,true,,4512,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,922,0,0
+1698954774234,856,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,200,OK,Thread Group 1-5,text,true,,4512,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,856,0,0
+1698954775092,674,https://jsonip.com/,200,OK,Thread Group 1-3,text,true,,960,432,6,6,https://jsonip.com/,674,0,331
+1698954743237,32504,Test,,"Number of samples in transaction : 31, number of failing samples : 4",Thread Group 1-3,,false,,79460,48046,6,6,null,32504,27,2497
+1698954775091,839,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,200,OK,Thread Group 1-1,text,true,,4429,4255,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,839,0,0
+1698954775091,963,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,200,OK,Thread Group 1-4,text,true,,4429,4255,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,963,0,0
+1698954775091,1055,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,200,OK,Thread Group 1-2,text,true,,4429,4255,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,1055,0,0
+1698954775091,1154,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,200,OK,Thread Group 1-6,text,true,,4512,4256,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=OPERATOR_PERFORMANCE,1154,0,0
+1698954776055,674,https://jsonip.com/,200,OK,Thread Group 1-4,text,true,,962,432,6,6,https://jsonip.com/,674,0,328
+1698954743404,33305,Test,,"Number of samples in transaction : 31, number of failing samples : 4",Thread Group 1-4,,false,,79462,48046,6,6,null,33305,21,2628
+1698954776147,661,https://jsonip.com/,200,OK,Thread Group 1-2,text,true,,958,432,6,6,https://jsonip.com/,661,0,303
+1698954743069,33715,Test,,"Number of samples in transaction : 31, number of failing samples : 4",Thread Group 1-2,,false,,79458,48046,6,6,null,33715,25,800
+1698954775768,1768,https://portaltest.mtn.ci/svg/options-outline.svg,200,OK,Thread Group 1-3,text,true,,882,433,6,6,https://portaltest.mtn.ci/svg/options-outline.svg,1768,0,0
+1698954776730,806,https://portaltest.mtn.ci/svg/options-outline.svg,200,OK,Thread Group 1-4,text,true,,882,433,6,6,https://portaltest.mtn.ci/svg/options-outline.svg,806,0,0
+1698954776808,728,https://portaltest.mtn.ci/svg/options-outline.svg,200,OK,Thread Group 1-2,text,true,,882,433,6,6,https://portaltest.mtn.ci/svg/options-outline.svg,728,0,0
+1698954776248,1288,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,200,OK,Thread Group 1-6,text,true,,4429,4255,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,1288,0,0
+1698954775091,2445,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,200,OK,Thread Group 1-5,text,true,,4429,4255,6,6,https://portaltest.mtn.ci/registration/analytics?panelName=MANAGER_PERFORMANCE,2445,0,0
+1698954775932,1700,https://jsonip.com/,200,OK,Thread Group 1-1,text,true,,972,432,6,6,https://jsonip.com/,1700,0,1373
+1698954742901,34705,Test,,"Number of samples in transaction : 31, number of failing samples : 4",Thread Group 1-1,,false,,79472,48046,6,6,null,34705,27,1888
+1698954777537,726,https://jsonip.com/,200,OK,Thread Group 1-6,text,true,,966,432,6,6,https://jsonip.com/,726,0,314
+1698954743736,34501,Test,,"Number of samples in transaction : 31, number of failing samples : 4",Thread Group 1-6,,false,,79466,48046,6,6,null,34501,26,3408
+1698954777538,725,https://jsonip.com/,200,OK,Thread Group 1-5,text,true,,962,432,6,6,https://jsonip.com/,725,0,343
+1698954743568,34669,Test,,"Number of samples in transaction : 31, number of failing samples : 4",Thread Group 1-5,,false,,79462,48046,6,6,null,34669,27,3604
+1698954777537,1340,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,200,OK,Thread Group 1-3,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,1340,0,0
+1698954777537,1340,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,200,OK,Thread Group 1-4,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,1340,0,0
+1698954778264,613,https://portaltest.mtn.ci/svg/options-outline.svg,200,OK,Thread Group 1-5,text,true,,882,433,6,6,https://portaltest.mtn.ci/svg/options-outline.svg,613,0,0
+1698954777537,1340,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,200,OK,Thread Group 1-2,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,1340,0,0
+1698954777633,1244,https://portaltest.mtn.ci/svg/options-outline.svg,200,OK,Thread Group 1-1,text,true,,882,433,6,6,https://portaltest.mtn.ci/svg/options-outline.svg,1244,0,0
+1698954778263,614,https://portaltest.mtn.ci/svg/options-outline.svg,200,OK,Thread Group 1-6,text,true,,882,433,6,6,https://portaltest.mtn.ci/svg/options-outline.svg,614,0,0
+1698954778879,307,https://portaltest.mtn.ci/svg/download-outline.svg,200,OK,Thread Group 1-4,text,true,,661,434,6,6,https://portaltest.mtn.ci/svg/download-outline.svg,307,0,0
+1698954778879,307,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,200,OK,Thread Group 1-6,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,307,0,0
+1698954778879,307,https://portaltest.mtn.ci/svg/download-outline.svg,200,OK,Thread Group 1-3,text,true,,661,434,6,6,https://portaltest.mtn.ci/svg/download-outline.svg,307,0,0
+1698954778879,316,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,200,OK,Thread Group 1-5,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,316,0,0
+1698954778879,316,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,200,OK,Thread Group 1-1,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-down-outline.svg,316,0,0
+1698954778879,323,https://portaltest.mtn.ci/svg/download-outline.svg,200,OK,Thread Group 1-2,text,true,,661,434,6,6,https://portaltest.mtn.ci/svg/download-outline.svg,323,0,0
+1698954779196,298,https://portaltest.mtn.ci/svg/download-outline.svg,200,OK,Thread Group 1-1,text,true,,661,434,6,6,https://portaltest.mtn.ci/svg/download-outline.svg,298,0,0
+1698954779187,307,https://portaltest.mtn.ci/svg/calendar-outline.svg,200,OK,Thread Group 1-4,text,true,,977,434,6,6,https://portaltest.mtn.ci/svg/calendar-outline.svg,307,0,0
+1698954779196,298,https://portaltest.mtn.ci/svg/download-outline.svg,200,OK,Thread Group 1-5,text,true,,661,434,6,6,https://portaltest.mtn.ci/svg/download-outline.svg,298,0,0
+1698954779187,307,https://portaltest.mtn.ci/svg/calendar-outline.svg,200,OK,Thread Group 1-3,text,true,,977,434,6,6,https://portaltest.mtn.ci/svg/calendar-outline.svg,307,0,0
+1698954779203,343,https://portaltest.mtn.ci/svg/calendar-outline.svg,200,OK,Thread Group 1-2,text,true,,977,434,6,6,https://portaltest.mtn.ci/svg/calendar-outline.svg,343,0,0
+1698954779187,359,https://portaltest.mtn.ci/svg/download-outline.svg,200,OK,Thread Group 1-6,text,true,,661,434,6,6,https://portaltest.mtn.ci/svg/download-outline.svg,359,0,0
+1698954779495,305,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,200,OK,Thread Group 1-3,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,305,0,0
+1698954779494,306,https://portaltest.mtn.ci/svg/calendar-outline.svg,200,OK,Thread Group 1-1,text,true,,977,434,6,6,https://portaltest.mtn.ci/svg/calendar-outline.svg,306,0,0
+1698954779547,663,https://portaltest.mtn.ci/svg/calendar-outline.svg,200,OK,Thread Group 1-6,text,true,,977,434,6,6,https://portaltest.mtn.ci/svg/calendar-outline.svg,663,0,0
+1698954779801,409,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,200,OK,Thread Group 1-3,text,true,,452,441,6,6,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,409,0,0
+1698954779801,409,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,200,OK,Thread Group 1-1,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,409,0,0
+1698954779495,715,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,200,OK,Thread Group 1-4,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,715,0,0
+1698954779494,716,https://portaltest.mtn.ci/svg/calendar-outline.svg,200,OK,Thread Group 1-5,text,true,,977,434,6,6,https://portaltest.mtn.ci/svg/calendar-outline.svg,716,0,0
+1698954779547,663,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,200,OK,Thread Group 1-2,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,663,0,0
+1698954780210,308,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,200,OK,Thread Group 1-5,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,308,0,0
+1698954780210,307,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,200,OK,Thread Group 1-2,text,true,,452,441,6,6,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,307,0,0
+1698954780210,308,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,200,OK,Thread Group 1-1,text,true,,452,441,6,6,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,308,0,0
+1698954780210,307,https://portaltest.mtn.ci/svg/information-circle.svg,200,OK,Thread Group 1-3,text,true,,559,436,6,6,https://portaltest.mtn.ci/svg/information-circle.svg,307,0,0
+1698954780210,308,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,200,OK,Thread Group 1-4,text,true,,452,441,6,6,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,308,0,0
+1698954780210,307,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,200,OK,Thread Group 1-6,text,true,,452,438,6,6,https://portaltest.mtn.ci/svg/chevron-back-outline.svg,307,0,0
+1698954780518,693,https://portaltest.mtn.ci/svg/information-circle.svg,200,OK,Thread Group 1-2,text,true,,559,436,6,6,https://portaltest.mtn.ci/svg/information-circle.svg,693,0,0
+1698954780518,693,https://portaltest.mtn.ci/svg/information-circle.svg,200,OK,Thread Group 1-4,text,true,,559,436,6,6,https://portaltest.mtn.ci/svg/information-circle.svg,693,0,0
+1698954780518,693,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,200,OK,Thread Group 1-6,text,true,,452,441,6,6,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,693,0,0
+1698954780518,693,https://portaltest.mtn.ci/svg/information-circle.svg,200,OK,Thread Group 1-1,text,true,,559,436,6,6,https://portaltest.mtn.ci/svg/information-circle.svg,693,0,0
+1698954780518,693,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,200,OK,Thread Group 1-5,text,true,,452,441,6,6,https://portaltest.mtn.ci/svg/chevron-forward-outline.svg,693,0,0
+1698954781212,1195,https://portaltest.mtn.ci/svg/information-circle.svg,200,OK,Thread Group 1-5,text,true,,559,436,6,6,https://portaltest.mtn.ci/svg/information-circle.svg,1195,0,0
+1698954781212,1195,https://portaltest.mtn.ci/svg/information-circle.svg,200,OK,Thread Group 1-6,text,true,,559,436,6,6,https://portaltest.mtn.ci/svg/information-circle.svg,1195,0,0
+1698954780518,1889,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,200,OK,Thread Group 1-3,text,true,,8396,4221,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,1889,0,0
+1698954781212,1197,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,200,OK,Thread Group 1-1,text,true,,8396,4221,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,1197,0,0
+1698954781212,1198,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,200,OK,Thread Group 1-4,text,true,,8396,4221,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,1198,0,0
+1698954781212,1287,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,200,OK,Thread Group 1-2,text,true,,8396,4221,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,1287,0,0
+1698954782408,292,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,200,OK,Thread Group 1-3,text,true,,637,443,6,6,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,292,0,0
+1698954782410,360,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,200,OK,Thread Group 1-1,text,true,,637,443,6,6,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,360,0,0
+1698954782410,360,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,200,OK,Thread Group 1-4,text,true,,637,443,6,6,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,360,0,0
+1698954782499,320,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,200,OK,Thread Group 1-2,text,true,,637,443,6,6,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,320,0,0
+1698954782408,977,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,200,OK,Thread Group 1-5,text,true,,8396,4221,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,977,0,0
+1698954782700,759,https://portaltest.mtn.ci/user/analytics/user-count,200,OK,Thread Group 1-3,text,true,,3878,4201,6,6,https://portaltest.mtn.ci/user/analytics/user-count,759,0,0
+1698954782408,1051,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,200,OK,Thread Group 1-6,text,true,,8396,4221,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,1051,0,0
+1698954783386,370,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,200,OK,Thread Group 1-5,text,true,,637,443,6,6,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,370,0,0
+1698954782771,985,https://portaltest.mtn.ci/user/analytics/user-count,200,OK,Thread Group 1-1,text,true,,3878,4201,6,6,https://portaltest.mtn.ci/user/analytics/user-count,985,0,0
+1698954782819,937,https://portaltest.mtn.ci/user/analytics/user-count,200,OK,Thread Group 1-2,text,true,,3878,4201,6,6,https://portaltest.mtn.ci/user/analytics/user-count,937,0,0
+1698954782771,985,https://portaltest.mtn.ci/user/analytics/user-count,200,OK,Thread Group 1-4,text,true,,3878,4201,6,6,https://portaltest.mtn.ci/user/analytics/user-count,985,0,0
+1698954783461,312,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,200,OK,Thread Group 1-6,text,true,,637,443,6,6,https://portaltest.mtn.ci/svg/ellipsis-vertical-outline.svg,312,0,0
+1698954783460,893,https://portaltest.mtn.ci/platform-user/role-group,200,OK,Thread Group 1-3,text,true,,6460,4200,6,6,https://portaltest.mtn.ci/platform-user/role-group,893,0,0
+1698954775767,8576,login,200,"Number of samples in transaction : 11, number of failing samples : 0",Thread Group 1-3,,true,,23806,16119,6,6,null,8576,10,0
+1698954783757,1302,https://portaltest.mtn.ci/platform-user/role-group,200,OK,Thread Group 1-4,text,true,,6460,4200,6,6,https://portaltest.mtn.ci/platform-user/role-group,1302,0,0
+1698954783757,1302,https://portaltest.mtn.ci/platform-user/role-group,200,OK,Thread Group 1-1,text,true,,6460,4200,6,6,https://portaltest.mtn.ci/platform-user/role-group,1302,0,0
+1698954783774,1285,https://portaltest.mtn.ci/user/analytics/user-count,200,OK,Thread Group 1-6,text,true,,3878,4201,6,6,https://portaltest.mtn.ci/user/analytics/user-count,1285,0,0
+1698954783757,1302,https://portaltest.mtn.ci/user/analytics/user-count,200,OK,Thread Group 1-5,text,true,,3878,4201,6,6,https://portaltest.mtn.ci/user/analytics/user-count,1302,0,0
+1698954777632,7418,login,200,"Number of samples in transaction : 11, number of failing samples : 0",Thread Group 1-1,,true,,23806,16119,6,6,null,7418,9,0
+1698954776729,8321,login,200,"Number of samples in transaction : 11, number of failing samples : 0",Thread Group 1-4,,true,,23806,16119,6,6,null,8321,9,0
+1698954784354,975,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,401,Unauthorized,Thread Group 1-3,text,false,,336,4229,6,6,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,975,0,0
+1698954783757,1572,https://portaltest.mtn.ci/platform-user/role-group,200,OK,Thread Group 1-2,text,true,,6460,4200,6,6,https://portaltest.mtn.ci/platform-user/role-group,1572,0,0
+1698954776808,8513,login,200,"Number of samples in transaction : 11, number of failing samples : 0",Thread Group 1-2,,true,,23806,16119,6,6,null,8513,8,0
+1698954785060,612,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,401,Unauthorized,Thread Group 1-4,text,false,,336,4229,6,6,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,612,0,0
+1698954785060,781,https://portaltest.mtn.ci/platform-user/role-group,200,OK,Thread Group 1-5,text,true,,6460,4200,6,6,https://portaltest.mtn.ci/platform-user/role-group,781,0,0
+1698954778264,7569,login,200,"Number of samples in transaction : 11, number of failing samples : 0",Thread Group 1-5,,true,,23806,16119,6,6,null,7569,8,0
+1698954785330,711,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-3,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,711,0,0
+1698954785330,711,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,401,Unauthorized,Thread Group 1-2,text,false,,336,4229,6,6,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,711,0,0
+1698954785060,981,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,401,Unauthorized,Thread Group 1-1,text,false,,336,4229,6,6,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,981,0,0
+1698954785060,981,https://portaltest.mtn.ci/platform-user/role-group,200,OK,Thread Group 1-6,text,true,,6460,4200,6,6,https://portaltest.mtn.ci/platform-user/role-group,981,0,0
+1698954778263,7767,login,200,"Number of samples in transaction : 11, number of failing samples : 0",Thread Group 1-6,,true,,23806,16119,6,6,null,7767,11,0
+1698954785672,373,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-4,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,373,0,0
+1698954785842,269,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,401,Unauthorized,Thread Group 1-5,text,false,,336,4229,6,6,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,269,0,0
+1698954786042,414,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-2,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,414,0,0
+1698954786042,414,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-3,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,414,0,0
+1698954786042,414,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-1,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,414,0,0
+1698954786112,344,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-5,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,344,0,0
+1698954786042,414,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,401,Unauthorized,Thread Group 1-6,text,false,,336,4229,6,6,https://portaltest.mtn.ci/api/settings/getSetting?settingName=REGISTERED_PREFIX,414,0,0
+1698954786046,410,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-4,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,410,0,0
+1698954786474,292,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-2,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,292,0,0
+1698954786474,680,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-1,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,680,0,0
+1698954786474,680,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-6,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,680,0,0
+1698954786474,680,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-5,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,680,0,0
+1698954786474,680,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-3,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954786474,903,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-4,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954787155,288,https://portaltest.mtn.ci/platform-user/role-group,401,Unauthorized,Thread Group 1-3,text,false,,319,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,288,0,0
+1698954787155,288,https://portaltest.mtn.ci/user/core/get-user-org,401,Unauthorized,Thread Group 1-6,text,false,,319,4198,6,6,https://portaltest.mtn.ci/user/core/get-user-org,288,0,0
+1698954786766,676,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-2,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954784354,3068,click on the usermangement usecase,,"Number of samples in transaction : 5, number of failing samples : 4",Thread Group 1-3,,false,,4979,21129,6,6,null,2388,71,0
+1698954787155,777,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-1,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954787378,818,https://portaltest.mtn.ci/platform-user/role-group,401,Unauthorized,Thread Group 1-4,text,false,,319,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,818,0,0
+1698954785060,3116,click on the usermangement usecase,,"Number of samples in transaction : 5, number of failing samples : 4",Thread Group 1-4,,false,,4979,21129,6,6,null,2213,21,0
+1698954787493,704,https://portaltest.mtn.ci/platform-user/role-group,401,Unauthorized,Thread Group 1-2,text,false,,319,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,704,0,0
+1698954787155,1041,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-5,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954787493,704,https://portaltest.mtn.ci/svg/radio-button-off.svg,200,OK,Thread Group 1-3,text,true,,481,434,6,6,https://portaltest.mtn.ci/svg/radio-button-off.svg,704,0,0
+1698954785330,2797,click on the usermangement usecase,,"Number of samples in transaction : 5, number of failing samples : 4",Thread Group 1-2,,false,,4979,21129,6,6,null,2121,70,0
+1698954787493,704,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-6,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954787933,673,https://portaltest.mtn.ci/platform-user/role-group,401,Unauthorized,Thread Group 1-1,text,false,,319,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,673,0,0
+1698954785060,3525,click on the usermangement usecase,,"Number of samples in transaction : 5, number of failing samples : 4",Thread Group 1-1,,false,,4979,21129,6,6,null,2748,21,0
+1698954788198,718,https://portaltest.mtn.ci/platform-user/role-group,401,Unauthorized,Thread Group 1-6,text,false,,319,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,718,0,0
+1698954788198,718,https://portaltest.mtn.ci/platform-user/role-group,401,Unauthorized,Thread Group 1-5,text,false,,319,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,718,0,0
+1698954788198,718,https://portaltest.mtn.ci/svg/checkmark-circle.svg,200,OK,Thread Group 1-3,text,true,,574,434,6,6,https://portaltest.mtn.ci/svg/checkmark-circle.svg,718,0,0
+1698954788197,719,https://portaltest.mtn.ci/svg/radio-button-off.svg,200,OK,Thread Group 1-4,text,true,,481,434,6,6,https://portaltest.mtn.ci/svg/radio-button-off.svg,719,0,0
+1698954788605,311,https://portaltest.mtn.ci/svg/radio-button-off.svg,200,OK,Thread Group 1-1,text,true,,481,434,6,6,https://portaltest.mtn.ci/svg/radio-button-off.svg,311,0,0
+1698954786042,2804,click on the usermangement usecase,,"Number of samples in transaction : 5, number of failing samples : 4",Thread Group 1-6,,false,,4979,21129,6,6,null,2100,71,0
+1698954785842,3052,click on the usermangement usecase,,"Number of samples in transaction : 5, number of failing samples : 4",Thread Group 1-5,,false,,4979,21129,6,6,null,2011,23,0
+1698954788198,719,https://portaltest.mtn.ci/svg/radio-button-off.svg,200,OK,Thread Group 1-2,text,true,,481,434,6,6,https://portaltest.mtn.ci/svg/radio-button-off.svg,719,0,0
+1698954788916,304,https://portaltest.mtn.ci/svg/checkmark-circle.svg,200,OK,Thread Group 1-4,text,true,,574,434,6,6,https://portaltest.mtn.ci/svg/checkmark-circle.svg,304,0,0
+1698954788916,304,https://portaltest.mtn.ci/svg/checkmark-circle.svg,200,OK,Thread Group 1-1,text,true,,574,434,6,6,https://portaltest.mtn.ci/svg/checkmark-circle.svg,304,0,0
+1698954788916,304,https://portaltest.mtn.ci/svg/radio-button-off.svg,200,OK,Thread Group 1-6,text,true,,481,434,6,6,https://portaltest.mtn.ci/svg/radio-button-off.svg,304,0,0
+1698954788916,509,https://portaltest.mtn.ci/user/core/create-user/admin,401,Unauthorized,Thread Group 1-3,text,false,,319,4536,6,6,https://portaltest.mtn.ci/user/core/create-user/admin,509,0,0
+1698954788916,509,https://portaltest.mtn.ci/svg/checkmark-circle.svg,200,OK,Thread Group 1-2,text,true,,574,434,6,6,https://portaltest.mtn.ci/svg/checkmark-circle.svg,509,0,0
+1698954788916,509,https://portaltest.mtn.ci/svg/radio-button-off.svg,200,OK,Thread Group 1-5,text,true,,481,434,6,6,https://portaltest.mtn.ci/svg/radio-button-off.svg,509,0,0
+1698954789221,264,https://portaltest.mtn.ci/svg/checkmark-circle.svg,200,OK,Thread Group 1-6,text,true,,574,434,6,6,https://portaltest.mtn.ci/svg/checkmark-circle.svg,264,0,0
+1698954789221,295,https://portaltest.mtn.ci/user/core/create-user/admin,401,Unauthorized,Thread Group 1-4,text,false,,319,4536,6,6,https://portaltest.mtn.ci/user/core/create-user/admin,295,0,0
+1698954789221,300,https://portaltest.mtn.ci/user/core/create-user/admin,401,Unauthorized,Thread Group 1-1,text,false,,319,4536,6,6,https://portaltest.mtn.ci/user/core/create-user/admin,300,0,0
+1698954789426,308,https://portaltest.mtn.ci/svg/checkmark-circle.svg,200,OK,Thread Group 1-5,text,true,,574,434,6,6,https://portaltest.mtn.ci/svg/checkmark-circle.svg,308,0,0
+1698954789426,313,https://portaltest.mtn.ci/user/core/create-user/admin,401,Unauthorized,Thread Group 1-2,text,false,,319,4536,6,6,https://portaltest.mtn.ci/user/core/create-user/admin,313,0,0
+1698954789514,1051,https://portaltest.mtn.ci/user/core/create-user/admin,401,Unauthorized,Thread Group 1-6,text,false,,319,4536,6,6,https://portaltest.mtn.ci/user/core/create-user/admin,1051,0,0
+1698954789735,830,https://portaltest.mtn.ci/user/core/create-user/admin,401,Unauthorized,Thread Group 1-5,text,false,,319,4536,6,6,https://portaltest.mtn.ci/user/core/create-user/admin,830,0,0
+1698954789426,1139,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,304,Not Modified,Thread Group 1-3,,true,,3687,4274,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,0,0,0
+1698954789516,1049,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,304,Not Modified,Thread Group 1-4,,true,,3687,4274,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,0,0,0
+1698954789521,1044,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,304,Not Modified,Thread Group 1-1,,true,,3687,4274,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,0,0,0
+1698954789739,826,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,304,Not Modified,Thread Group 1-2,,true,,3687,4274,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,0,0,0
+1698954790566,448,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,304,Not Modified,Thread Group 1-6,,true,,3687,4274,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,0,0,0
+1698954790566,702,https://portaltest.mtn.ci/user/analytics/user-count,304,Not Modified,Thread Group 1-3,,true,,3685,4252,6,6,https://portaltest.mtn.ci/user/analytics/user-count,0,0,0
+1698954790566,1226,https://portaltest.mtn.ci/user/analytics/user-count,304,Not Modified,Thread Group 1-1,,true,,3685,4252,6,6,https://portaltest.mtn.ci/user/analytics/user-count,0,0,0
+1698954790566,1226,https://portaltest.mtn.ci/user/analytics/user-count,304,Not Modified,Thread Group 1-2,,true,,3685,4252,6,6,https://portaltest.mtn.ci/user/analytics/user-count,0,0,0
+1698954790566,1842,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,304,Not Modified,Thread Group 1-5,,true,,3687,4274,6,6,https://portaltest.mtn.ci/user/table-core/getUsers?pageNo=1&pageSize=10,0,0,0
+1698954790566,1842,https://portaltest.mtn.ci/user/analytics/user-count,304,Not Modified,Thread Group 1-4,,true,,3685,4252,6,6,https://portaltest.mtn.ci/user/analytics/user-count,0,0,0
+1698954791040,1368,https://portaltest.mtn.ci/user/analytics/user-count,304,Not Modified,Thread Group 1-6,,true,,3685,4252,6,6,https://portaltest.mtn.ci/user/analytics/user-count,0,0,0
+1698954791269,1139,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-3,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954791793,615,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-1,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954791793,615,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-2,,true,,3686,4252,6,6,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954787493,4911,create new user,,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-3,,false,,12432,18182,6,6,null,1931,6,0
+1698954788605,3800,create new user,,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-1,,false,,12432,18182,6,6,null,915,4,0
+1698954788198,4208,create new user,,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-2,,false,,12432,18182,6,6,null,1541,4,0
+1698954792409,778,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-4,,true,,3686,4252,3,3,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954788197,4987,create new user,,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-4,,false,,12432,18182,3,3,null,1318,5,0
+1698954792409,792,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-6,,true,,3686,4252,2,2,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954788916,4227,create new user,,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-6,,false,,12432,18182,2,2,null,1619,59,0
+1698954792409,971,https://portaltest.mtn.ci/user/analytics/user-count,304,Not Modified,Thread Group 1-5,,true,,3685,4252,1,1,https://portaltest.mtn.ci/user/analytics/user-count,0,0,0
+1698954793381,958,https://portaltest.mtn.ci/platform-user/role-group,304,Not Modified,Thread Group 1-5,,true,,3686,4252,1,1,https://portaltest.mtn.ci/platform-user/role-group,0,0,0
+1698954788916,5418,create new user,,"Number of samples in transaction : 6, number of failing samples : 1",Thread Group 1-5,,false,,12432,18182,1,1,null,1647,6,0
