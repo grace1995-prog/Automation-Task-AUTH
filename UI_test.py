@@ -1,4 +1,4 @@
-from selenium import webdriver
+tfrom selenium import webdriver
 from selenium.webdriver.common.by import By
 import time
 
