@@ -50,13 +50,3 @@ driver.find_element(By.XPATH, "//li[@class='active mm-active']").click()
 time.sleep(5)
 driver.find_element(By.XPATH, "//div[@class='deznav']//ul[1]//li[1]").click()
 time.sleep(5)
-
-#driver.find_element(By.XPATH, "//input[@type='tel']").send_keys("0784578490")
-#driver.find_element(By.XPATH, "//body[1]/div[2]/div[1]/div[1]/div[2]/div[1]/div[1]/div[4]/div[1]/div[1]/div[1]/div[1]/div[1]/div[1]/div[5]/select[1]").send_keys("Access Bank")
-
-
-
-
-
-
-
