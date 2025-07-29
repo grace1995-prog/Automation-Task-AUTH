@@ -1,0 +1,28 @@
+Label,# Samples,Average,Min,Max,Std. Dev.,Error %,Throughput,Received KB/sec,Sent KB/sec,Avg. Bytes
+https://portaltest.mtn.ci/assets/i18n/en.json,100,5100,0,9774,1112.90,0.000%,10.23018,529.19,41.42,52970.0
+https://portaltest.mtn.ci/assets/i18n/sfx-fingerprint-en.json,100,2284,0,4531,827.75,0.000%,12.07001,580.76,49.06,49271.0
+https://portaltest.mtn.ci/assets/i18n/sfx-form-preview-en.json,100,2663,0,3841,614.14,0.000%,10.28278,536.51,41.80,53428.0
+https://portaltest.mtn.ci/assets/i18n/sfx-portrait-capture-en.json,100,1686,0,2723,588.87,0.000%,10.61909,363.95,43.21,35096.0
+https://portaltest.mtn.ci/assets/i18n/sfx-verified-field-en.json,100,1224,0,1561,254.87,0.000%,11.86521,215.65,48.26,18611.0
+https://portaltest.mtn.ci/assets/i18n/sfx-form-builder-en.json,100,1499,0,2910,397.04,0.000%,11.48106,489.99,46.68,43702.0
+https://portaltest.mtn.ci/assets/i18n/sfx-otp-verification-en.json,100,922,0,1552,285.90,0.000%,11.87931,11.00,48.34,948.0
+https://portaltest.mtn.ci/assets/i18n/sfx-searchable-dropdown-en.json,100,1053,0,1496,220.78,0.000%,12.24440,4.74,49.86,396.0
+https://portaltest.mtn.ci/assets/i18n/sfx-form-view-en.json,100,980,0,1257,153.24,0.000%,13.00728,19.21,52.84,1512.0
+https://portaltest.mtn.ci/assets/i18n/sfx-barcode-scanner-en.json,100,1073,0,1347,110.07,0.000%,12.04384,5.30,49.00,451.0
+https://portaltest.mtn.ci/assets/i18n/sfx-custom-table-en.json,100,1029,0,1260,124.02,0.000%,12.40541,6.42,50.43,530.0
+https://portaltest.mtn.ci/assets/i18n/sfx-subscriber-reg-panel-en.json,100,1026,0,1264,129.29,0.000%,12.84687,24.59,52.33,1960.0
+https://portaltest.mtn.ci/assets/i18n/sfx-subscriber-reg-details-en.json,100,994,0,1221,116.27,0.000%,13.45714,92.45,54.84,7035.0
+https://portaltest.mtn.ci/assets/i18n/sfx-signature-capture-en.json,100,955,0,1258,140.96,0.000%,13.76273,7.84,56.02,583.0
+https://portaltest.mtn.ci/assets/i18n/sfx-login-en.json,100,979,0,1259,179.78,1.000%,13.93146,131.66,56.54,9677.6
+https://portaltest.mtn.ci/assets/i18n/sfx-mrz-scanner-en.json,100,889,0,2040,187.13,4.000%,13.44267,9.89,54.64,753.1
+https://portaltest.mtn.ci/assets/i18n/sfx-ocr-scanner-en.json,100,842,0,2040,235.77,13.000%,13.98406,9.37,56.84,685.9
+https://portaltest.mtn.ci/assets/i18n/sfx-view-details-en.json,100,796,0,2035,210.31,26.000%,14.60494,5.30,59.38,371.6
+https://portaltest.mtn.ci/assets/i18n/sfx-edit-settings-en.json,100,811,0,2040,220.44,39.000%,14.22273,6.04,57.84,434.9
+https://portaltest.mtn.ci/assets/i18n/sfx-settings-management-en.json,100,857,0,1980,217.69,75.000%,14.68860,8.75,59.82,610.2
+https://portaltest.mtn.ci/assets/i18n/sfx-workflow-management-en.json,100,741,0,1977,206.24,87.000%,15.22302,14.02,61.99,943.1
+https://portaltest.mtn.ci/svg/caret-down-outline.svg,100,804,0,2040,320.27,100.000%,16.75884,11.98,5.92,732.0
+https://portaltest.mtn.ci/platform-user/roles/list,100,763,0,1109,208.84,0.000%,19.11680,129.64,77.49,6944.0
+Test,100,29980,0,32969,1282.80,100.000%,3.01114,845.84,270.43,287645.6
+https://portaltest.mtn.ci/platform-user/role-group,100,759,0,1108,240.82,0.000%,20.03205,76.41,83.59,3906.0
+select role,100,759,0,1108,240.82,0.000%,20.02002,76.37,83.54,3906.0
+TOTAL,2600,2364,0,32969,5613.17,17.115%,77.64903,1700.62,561.35,22427.0

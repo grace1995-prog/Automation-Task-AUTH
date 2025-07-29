@@ -1,0 +1,2353 @@
+{
+	"info": {
+		"_postman_id": "3e24b0d9-cefb-4b12-8fe9-895f2ade17a2",
+		"name": "REM_API_TASK",
+		"description": "# 🚀 Get started here\n\nThis template guides you through CRUD operations (GET, POST, PUT, DELETE), variables, and tests.\n\n## 🔖 **How to use this template**\n\n#### **Step 1: Send requests**\n\nRESTful APIs allow you to perform CRUD operations using the POST, GET, PUT, and DELETE HTTP methods.\n\nThis collection contains each of these [request](https://learning.postman.com/docs/sending-requests/requests/) types. Open each request and click \"Send\" to see what happens.\n\n#### **Step 2: View responses**\n\nObserve the response tab for status code (200 OK), response time, and size.\n\n#### **Step 3: Send new Body data**\n\nUpdate or add new data in \"Body\" in the POST request. Typically, Body data is also used in PUT request.\n\n```\n{\n    \"name\": \"Add your name in the body\"\n}\n\n ```\n\n#### **Step 4: Update the variable**\n\nVariables enable you to store and reuse values in Postman. We have created a [variable](https://learning.postman.com/docs/sending-requests/variables/) called `base_url` with the sample request [https://postman-api-learner.glitch.me](https://postman-api-learner.glitch.me). Replace it with your API endpoint to customize this collection.\n\n#### **Step 5: Add tests in the \"Scripts\" tab**\n\nAdding tests to your requests can help you confirm that your API is working as expected. You can write test scripts in JavaScript and view the output in the \"Test Results\" tab.\n\n<img src=\"https://content.pstmn.io/fa30ea0a-373d-4545-a668-e7b283cca343/aW1hZ2UucG5n\" alt=\"\" height=\"1530\" width=\"2162\">\n\n## 💪 Pro tips\n\n- Use folders to group related requests and organize the collection.\n    \n- Add more [scripts](https://learning.postman.com/docs/writing-scripts/intro-to-scripts/) to verify if the API works as expected and execute workflows.\n    \n\n## 💡Related templates\n\n[API testing basics](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9a37a28-055b-49cd-8c7e-97494a21eb54&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[API documentation](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=e9c28f47-1253-44af-a2f3-20dce4da1f18&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)  \n[Authorization methods](https://go.postman.co/redirect/workspace?type=personal&collectionTemplateId=31a9a6ed-4cdf-4ced-984c-d12c9aec1c27&sourceTemplateId=ddb19591-3097-41cf-82af-c84273e56719)",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26531836"
+	},
+	"item": [
+		{
+			"name": "Login Authentication",
+			"item": [
+				{
+					"name": "Admin login - Valid details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ok\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"token\",\"auth_id\",\"createdAt\",\"updatedAt\",\"email_status\",\"firstname\",\"lastname\",\"email\",\"user_type\"); \r",
+									"});\r",
+									"pm.test(\"firstname\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Super\"); \r",
+									"});\r",
+									"pm.test(\"lastname\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Admin\"); \r",
+									"});\r",
+									"pm.test(\"email\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"superadmin@emsee.com\"); \r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"9LPo099TPOK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Less than 6 character Limit",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Password must be 6 characters or more\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Only alphabet password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"password must have atleast one number\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"Imokom\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Only Numeric password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"password must have atleast one capital letter\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"1233456\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Only Caps password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"password must have atleast one small letter\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"1233456M4\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Only Small alphabet",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"password must have atleast one capital letter\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"1233456m4\"\n    \n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Invalid details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Email is invalid\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.\",\n    \"password\": \"name\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Non - Exisiting details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Email or password incorrect\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"test@emsee.com\",\n    \"password\": \"Imokom34@\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Only Email",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"password is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"superadmin@emsee.com\",\n    \"password\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login - Only Password",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Email is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"\",\n    \"password\": \"9LPo099TPOK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login -  No Parameter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Email is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"\",\n    \"password\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Admin login -  Mis-matched",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Email is invalid\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"email\": \"9LPo099TPOK\",\n    \"password\": \"superadmin@emsee.com\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/auths/login",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"auths",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Update UserRole",
+			"item": [
+				{
+					"name": "Update role -Valid id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ok\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - Already Existing role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ok\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - No Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"401\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Unauthorized\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - Invalid Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"401\"); \r",
+									"});\r",
+									"pm.test(\"error\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Unauthorized\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\",\"code\",)\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": ".eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - Invalid id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"404\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Requested resources does not exist\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript"
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/7d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"7d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - No Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"404\"); \r",
+									"});\r",
+									"pm.test(\"msg\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Requested resources does not exist\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"code\",\"msg\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - No Parameter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Nothing to update\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - Invalid Role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"role is invalid\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"xxxx\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update role - Non-existing  Role",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"role is invalid\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"role\": \"superExtraadmin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/67d2d6c036fcb4aa17a0a6c1",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"67d2d6c036fcb4aa17a0a6c1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Delete",
+			"item": [
+				{
+					"name": "New Request - Invalid Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"406\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Record not found\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/68864d053ac7330b7655eec3",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								"68864d053ac7330b7655eec3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request - No Id",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"404\"); \r",
+									"});\r",
+									"pm.test(\"msg\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Requested resources does not exist.\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"msg\",\"code\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins/",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Retrieve Details",
+			"item": [
+				{
+					"name": "Valid parameter",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins?page=1&item_per_page=50&start_date=&end_date=&q=&status=",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "item_per_page",
+									"value": "50"
+								},
+								{
+									"key": "start_date",
+									"value": ""
+								},
+								{
+									"key": "end_date",
+									"value": ""
+								},
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid parameter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ok\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"data\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"[]\");\r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins?page=90&item_per_page=50&start_date=&end_date=&q=&status=",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "90"
+								},
+								{
+									"key": "item_per_page",
+									"value": "50"
+								},
+								{
+									"key": "start_date",
+									"value": ""
+								},
+								{
+									"key": "end_date",
+									"value": ""
+								},
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "No Parameter",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ok\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"createdAt\",\"updatedAt\",\"email_status\",\"firstname\",\"lastname\",\"email\",\"user_type\"); \r",
+									"});\r",
+									"pm.test(\"firstname\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Clinton\"); \r",
+									"});\r",
+									"pm.test(\"lastname\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Eyituoyo\"); \r",
+									"});\r",
+									"pm.test(\"email\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"clintoneyituoyo@gmail.com\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyMjA1NywiZXhwIjoxNzUzNzU0NDAwfQ.-Q-ohtwOJOJaI5nwZi1lRo9R4MMgA3sTHi_CidLdjso",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "90",
+									"disabled": true
+								},
+								{
+									"key": "item_per_page",
+									"value": "50",
+									"disabled": true
+								},
+								{
+									"key": "start_date",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "end_date",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "q",
+									"value": "",
+									"disabled": true
+								},
+								{
+									"key": "status",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "No Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"401\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Unauthorized\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\",\"code\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins?page=1&item_per_page=50&start_date=&end_date=&q=&status=",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "item_per_page",
+									"value": "50"
+								},
+								{
+									"key": "start_date",
+									"value": ""
+								},
+								{
+									"key": "end_date",
+									"value": ""
+								},
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Invalid Token",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"pm.test(\"code\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"401\"); \r",
+									"});\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Unauthorized\"); \r",
+									"});\r",
+									"pm.test(\"response parameters \", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\",\"code\")\r",
+									"    });"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "yJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/admins?page=1&item_per_page=50&start_date=&end_date=&q=&status=",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"admins"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "item_per_page",
+									"value": "50"
+								},
+								{
+									"key": "start_date",
+									"value": ""
+								},
+								{
+									"key": "end_date",
+									"value": ""
+								},
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "status",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Create Bank",
+			"item": [
+				{
+					"name": "Add bank - Valid details",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 200\", function () {\r",
+									"    pm.response.to.have.status(200);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"ok\"); \r",
+									"});\r",
+									"\r",
+									"\r",
+									"pm.test(\"account_number\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"9026446720\"); \r",
+									"});\r",
+									"pm.test(\"account_name\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Mazi\"); \r",
+									"});\r",
+									"pm.test(\"type\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"naira\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"Access Bank\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - No bank name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Bank name is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - No account number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Account number is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"Access Bank\",\n    \"account_number\": \"\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - No account name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Bank name is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - No type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Type is required\"); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"Access Bank\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - Invalid Type",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Type must be either 'usd' or 'naira\"); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"Access Bank\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"test\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - Already Existing Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"Access Bank\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - Invalid account number",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"pm.test(\"Status code is 406\", function () {\r",
+									"    pm.response.to.have.status(406);\r",
+									"});\r",
+									"pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"Account number must be exactly 10 digits\"); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"Access Bank\",\n    \"account_number\": \"9026446720222\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add bank - Invalid bank name",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"exec": [
+									"/*pm.test(\"status\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"error\"); \r",
+									"});\r",
+									"\r",
+									"pm.test(\"message\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"bank_name is invalid' ); \r",
+									"});\r",
+									"pm.test(\"response parameters\", function () {\r",
+									"    pm.expect(pm.response.text()).to.include(\"status\",\"code\",\"message\"); \r",
+									"});*/"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRoX2lkIjoiNjdkMmQ2YzAzNmZjYjRhYTE3YTBhNmMxIiwiZW1haWwiOiJzdXBlcmFkbWluQGVtc2VlLmNvbSIsInVzZXJfdHlwZSI6InN1cGVyYWRtaW4iLCJkZXBhcnRtZW50IjoiIiwiZmlyc3RfbmFtZSI6IlN1cGVyIiwibGFzdF9uYW1lIjoiQWRtaW4iLCJzdGF0dXMiOjEsImlhdCI6MTc1MzcyNjc4OSwiZXhwIjoxNzUzNzU0NDAwfQ.ixgiJoAwRqZtyn1VjxDMoc0en7vqfGKalzksuRBKrKs",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bank_name\": \"123\",\n    \"account_number\": \"9026446720\",\n    \"account_name\": \"Mazi\",\n    \"type\": \"naira\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://esmeebackend.onrender.com/admin/accounts/banks",
+							"protocol": "https",
+							"host": [
+								"esmeebackend",
+								"onrender",
+								"com"
+							],
+							"path": [
+								"admin",
+								"accounts",
+								"banks"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1"
+		},
+		{
+			"key": "base_url",
+			"value": "https://postman-rest-api-learner.glitch.me/"
+		}
+	]
+}
