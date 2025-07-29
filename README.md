@@ -9,3 +9,4 @@ Before you can run the API collection, make sure you have the following installe
 2. *Newman* – Install Newman globally by running the following command in your terminal
 3. git clone https://github.com/grace1995-prog/Automation- Task-Auth.git
 4. You can run the collection locally using the Newman CLI to validate your API endpoints and generate reports for test results
+5. Specific test collection "Rem-api_collection.json"
