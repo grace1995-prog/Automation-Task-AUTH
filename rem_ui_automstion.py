@@ -46,7 +46,6 @@ driver.find_element(By.CSS_SELECTOR, "input[placeholder='Account name']").send_k
 driver.find_element(By.CSS_SELECTOR, "input[type='tel']").send_keys("0786546789")
 time.sleep(5)
 driver.find_element(By.CSS_SELECTOR, "option[value='Access Bank']").click()
-driver.find_element(By.CSS_SELECTOR, "option[value='Access Bank']").click()
 driver.find_element(By.CSS_SELECTOR, "option[value='usd']").click()
 driver.find_element(By.CSS_SELECTOR, "button[type='button']").click()
 driver.quit()
